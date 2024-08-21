@@ -1,0 +1,89 @@
+:root {
+    --darkBrown: #1b1212;
+    --lightBrown: #C19A6B;
+
+    --scrollbar: #483C32;
+
+}
+
+/*Afina a barra de navegação*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/*Muda a cor de fundo da barra de navegação*/
+::-webkit-scrollbar-track {
+    background: var(--darkBrown);
+}
+
+/*Muda a cor da barra de navegação*/
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar);
+}
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+
+    font-family: cursive;
+
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    float: left;
+    margin: 0 10px 0 10px;
+
+    font-size: 24px;
+}
+
+li:hover {
+    font-size: 32px;
+}
+
+a {
+    color: var(--lightBrown);
+    text-decoration: none;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px greenyellow solid;
+}
+
+.header {
+    background-color: var(--darkBrown);
+    color: var(--lightBrown);
+    height: 64px;
+}
+
+.section {
+    background-color: var(--lightBrown);
+    color: var(--darkBrown);
+    height: 256px; /*Mudar para fit-content ao inserir os conteúdos necessarios*/
+}
+
+.footer {
+    background-color: var(--darkBrown);
+    color: var(--lightBrown);
+    height: 128px;
+}
+
+div .grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+div .grid-item {
+    height: fit-content;
+    width: 100%;
+}
