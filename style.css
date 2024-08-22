@@ -4,6 +4,8 @@
 
     --scrollbar: #483C32;
 
+    --card-border-radius: 32px;
+
 }
 
 /*Afina a barra de navegação*/
@@ -57,7 +59,73 @@ div {
     justify-content: center;
     align-items: center;
 
-    border: 1px greenyellow solid;
+
+}
+
+div.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+div.grid-container-portifolio {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+div.grid-item {
+    flex-direction: column;
+
+    height: fit-content;
+    width: auto;
+}
+
+div.portifolio-item {
+    padding: 5%;
+}
+
+
+p {
+    margin: 32px 128px 32px 128px;
+    font-size: 24px;
+    color: var(--darkBrown);
+
+    text-align: justify;
+}
+
+p.title {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 64px;
+}
+
+p.mid-title {
+    font-size: 32px;
+}
+
+p.light-text {
+    color: var(--lightBrown);
+}
+
+img.perfil {
+    width: 300px;
+    height: 400px;
+    margin: 10% 50% 10% 0%;
+
+
+    object-fit: cover;
+    transform: perspective(256px) rotate3D(0, 1, 0, -10deg);
+    border-radius: 10px;
+    border: 2px solid var(--darkBrown);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+img.portifolio-img {
+    width: 100%;
+    height: 400px;
+
+    object-fit: cover;
+    border-radius: var(--card-border-radius) var(--card-border-radius) 0px 0px;
+    border: 2px solid var(--lightBrown);
 }
 
 .header {
@@ -69,7 +137,17 @@ div {
 .section {
     background-color: var(--lightBrown);
     color: var(--darkBrown);
-    height: 256px; /*Mudar para fit-content ao inserir os conteúdos necessarios*/
+    height: fit-content;
+    /*Mudar para fit-content ao inserir os conteúdos necessarios*/
+}
+
+.section2 {
+    flex-direction: column;
+}
+
+.portifolio {
+    background-color: var(--darkBrown);
+    color: var(--lightBrown);
 }
 
 .footer {
@@ -78,12 +156,19 @@ div {
     height: 128px;
 }
 
-div .grid-container {
-    display: grid;
-    grid-template-columns: 50% 50%;
+.card {
+    flex-direction: column;
+
+    background-color: var(--lightBrown);
+
+    width: 80%;
+
+
+    border-radius: var(--card-border-radius);
+    box-shadow: 0 4px 8px 0 rgba(193, 154, 107, 0.2);
+    transition: 0.3s;
 }
 
-div .grid-item {
-    height: fit-content;
-    width: 100%;
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(193, 154, 107, 0.5);
 }
