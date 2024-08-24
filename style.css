@@ -1,3 +1,4 @@
+/*Definição das variaveis*/
 :root {
     --darkBrown: #1b1212;
     --lightBrown: #C19A6B;
@@ -24,7 +25,7 @@
 }
 
 
-
+/*Definição geral da página*/
 * {
     box-sizing: border-box;
     padding: 0px;
@@ -34,6 +35,7 @@
 
 }
 
+/*Organização da lista que mantém o menu*/
 ul {
     list-style: none;
 }
@@ -54,6 +56,7 @@ a {
     text-decoration: none;
 }
 
+/*Organização das divs de todo o site*/
 div {
     display: flex;
     justify-content: center;
@@ -81,9 +84,10 @@ div.grid-item {
 
 div.portifolio-item {
     padding: 5%;
+    margin: 40px;
 }
 
-
+/*Definição dos diferentes tipos de paragráfos que o site pode conter*/
 p {
     margin: 32px 128px 32px 128px;
     font-size: 24px;
@@ -106,6 +110,7 @@ p.light-text {
     color: var(--lightBrown);
 }
 
+/*Edição das imagens presentes no site*/
 img.perfil {
     width: 300px;
     height: 400px;
@@ -120,7 +125,7 @@ img.perfil {
 }
 
 img.portifolio-img {
-    width: 100%;
+    width: 400px;
     height: 400px;
 
     object-fit: cover;
@@ -138,6 +143,7 @@ img.portifolio-img {
     background-color: var(--lightBrown);
     color: var(--darkBrown);
     height: fit-content;
+    padding: 64px;
     /*Mudar para fit-content ao inserir os conteúdos necessarios*/
 }
 
@@ -156,12 +162,13 @@ img.portifolio-img {
     height: 128px;
 }
 
+
 .card {
     flex-direction: column;
 
     background-color: var(--lightBrown);
 
-    width: 80%;
+    width: 400px;
 
 
     border-radius: var(--card-border-radius);

@@ -25,9 +25,9 @@
     <div id="sobr" class="section grid-container">
         <div class="grid-item">
             <p class="title">Sobre Mim</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias delectus quisquam laboriosam, perferendis
-                enim sint iure sit laudantium illum quaerat quibusdam? Veniam expedita architecto adipisci quaerat
-                numquam nulla natus sapiente!</p>
+            <p>Me chamo Luis Felipe, técnico em análise e desenvolvimento de sistemas e agora busco me graduar na área,
+                gosto de desenvolver jogos eletrônicos como hobbie, buscando algum dia conseguir me profissionalizar na
+                área.</p>
         </div>
         <div class="grid-item">
             <img src="perfil.jpg" class="perfil">
@@ -37,44 +37,82 @@
     <!-- Div responsavel pelas informações de educação-->
     <div id="educ" class="section section2">
         <p class="title">Formação</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias delectus quisquam laboriosam, perferendis
-            enim sint iure sit laudantium illum quaerat quibusdam? Veniam expedita architecto adipisci quaerat
-            numquam nulla natus sapiente!</p>
-
+        <p style="margin: 0;">Técnico em Análise e Desenvolvimento de Sistemas - Concluído 2019-2021</p>
+        <p style="margin: 0;">Tecnólogo em Análise e Desenvolvimento de Sistemas - Cursando 2024-2026</p>
     </div>
 
     <!-- Div responsavel pelas informações do portifólio-->
     <div id="port" class="section section2 portifolio">
         <p class="title light-text"> Portifólio </p>
 
+        <!-- Organiza a seção do portifolio em uma grid -->
         <div class="grid-container-portifolio">
+
+            <!-- Elemento que ficará na grid e irá conter as informações do projeto -->
             <div class="grid-item portifolio-item">
-                <div class="card">
-                    <img src="test.jpeg" class="portifolio-img">
-                    <p class="mid-title">Site 1</p>
-                </div>
+                <a target="_blank" rel="noopener noreferrer"
+                    href="https://github.com/luis-coraini/trilha-net-poo-desafio">
+                    <div class="card">
+                        <img src="csharp.png" class="portifolio-img">
+                        <p class="mid-title">Desafio POO</p>
+                    </div>
+                </a>
             </div>
+
             <div class="grid-item portifolio-item">
-                <div class="card">
-                    <img src="test.jpeg" class="portifolio-img">
-                    <p class="mid-title">Site 2</p>
-                </div>
+                <a target="_blank" rel="noopener noreferrer"
+                    href="https://github.com/luis-coraini/trilha-net-api-desafio">
+                    <div class="card">
+                        <img src="csharp.png" class="portifolio-img">
+                        <p class="mid-title">Desafio API .Net</p>
+                    </div>
+                </a>
             </div>
+
             <div class="grid-item portifolio-item">
-                <div class="card">
-                    <img src="test.jpeg" class="portifolio-img">
-                    <p class="mid-title">Site 3</p>
-                </div>
+                <a target="_blank" rel="noopener noreferrer"
+                    href="https://github.com/luis-coraini/trilha-net-testes-unitarios-desafio">
+                    <div class="card">
+                        <img src="csharp.png" class="portifolio-img">
+                        <p class="mid-title">Desafio Testes Unitários com .Net</p>
+                    </div>
+                </a>
             </div>
         </div>
 
     </div>
 
     <!-- Div responsavel pelas informações de contato-->
-    <div id="cont" class="section"> Contato </div>
+    <div id="cont" class="section section2">
+        <p class="title"> Contato </p>
+        <!-- Cria um formulário contendo as informações necessarias -->
+        <form>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email">
+            <br>
+            <label for="assunto">Assunto:</label>
+            <br>
+            <textarea name="assunto" rows="10" cols="50" id="assunto"></textarea>
+            <br>
+            <button>Enviar</button>
+
+        </form>
+    </div>
 
     <!-- Div responsavel pelo rodapé -->
-    <div class="footer"> Footer </div>
+    <div class="footer grid-container">
+        <div class="grid-item">&copy; Todos os direitos reservados!</div>
+
+    </div>
+
+    <script>
+        function openTab(url) {
+            window.open(url);
+        }
+
+    </script>
 </body>
 
 </html>
